@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             width: 200, // 너비 조절
             height: 200, // 높이 조절
             decoration: BoxDecoration(
-              color: Colors.blue, // 배경색상 변경
+              color: Colors.amber, // 배경색상 변경
               borderRadius: BorderRadius.circular(10), // 테두리 모서리 둥글게 조절
               boxShadow: [
                 BoxShadow(
