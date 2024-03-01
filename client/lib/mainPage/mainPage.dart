@@ -24,20 +24,8 @@ class _MainPageState extends State<MainPage> {
             backgroundColor: Colors.green,
             pinned: true,
             expandedHeight: 150.0,
-            leading: Row(
-              children: [
-                IconButton(
-                  icon: Icon(Icons.menu, size: 50.0, color: Colors.white,),
-                  onPressed: () {
-
-                  },
-                ),
-                Text(
-                  '홈',
-                  style: TextStyle(fontSize: 32.0, color: Colors.white),
-                ),
-              ],
-            ),
+            iconTheme: IconThemeData(color: Colors.white, size: 50.0),
+            title: Text('홈', style: TextStyle(color: Colors.white, fontSize: 35.0, fontWeight: FontWeight.bold), ),
 
             actions: [
               IconButton(
@@ -91,6 +79,30 @@ class _MainPageState extends State<MainPage> {
       ),
 
       bottomNavigationBar: MyBottomNavigationBar(),
+      drawer: Drawer(
+        backgroundColor: Colors.white,
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+              currentAccountPicture: CircleAvatar(
+                backgroundImage: AssetImage('Assets/Images/NU.jpg'),
+              ),
+              accountName: Text("누누"),
+              accountEmail: Text("Lookie@naver.com"),
+              //onDetailsPressed: () {},
+            ),
+            ListTile(
+              tileColor: Colors.white,
+              leading: Icon(Icons.home),
+              iconColor: Colors.purple,
+              //focusColor: Colors.purple,
+              title: Text("홈"),
+              onTap: () {},
+              trailing: Icon(Icons.navigate_next),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
