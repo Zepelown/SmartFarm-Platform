@@ -33,7 +33,7 @@ class _LoadingPageState extends State<LoadingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Color(0xff508974),
       //appBar: AppBar(title: Text("hello", textAlign: TextAlign.center,), backgroundColor: Colors.blue,),
       body: Center(
         child: AnimatedOpacity(
