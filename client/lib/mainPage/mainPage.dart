@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/material/icons.dart';
 
 class MainPage extends StatefulWidget {
 
@@ -85,7 +86,7 @@ class _MainPageState extends State<MainPage> {
           children: [
             UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('Assets/Images/NU.jpg'),
+                backgroundImage: AssetImage('assets/images/NU.jpg'),
               ),
               accountName: Text("누누"),
               accountEmail: Text("Lookie@naver.com"),
@@ -112,16 +113,24 @@ class ServiceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16.0),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: List.generate(
-          8,
-              (index) => IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.category),
-            tooltip: 'Service ${index + 1}',
+      child: Column(
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              GestureDetector(
+                onTap: (){
+                  print('클릭');
+                },
+                child: Column(
+                  children: <Widget>[
+                    IconButton(onPressed: () {}, icon: Image.asset('assets/icons/지식인'))
+                  ],
+                )
+              )
+            ]
           ),
-        ),
+        ]
       ),
     );
   }
