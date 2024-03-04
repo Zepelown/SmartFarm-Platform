@@ -1,7 +1,6 @@
-import 'package:client/signup/signUpPage.dart';
+import 'package:client/register/terms/registerTermsPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 
 
 class LoginPage extends StatelessWidget{
@@ -21,6 +20,7 @@ class LoginLayout extends StatefulWidget{
   @override
   State<LoginLayout> createState() => _LoginState();
 }
+
 
 class _LoginState extends State<LoginLayout> {
   // 자동 로그인 여부
@@ -104,7 +104,7 @@ class _LoginState extends State<LoginLayout> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SignUpPage()
+                                  builder: (context) => TermsPage()
                               )
                           );
                         },
