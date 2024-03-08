@@ -36,6 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   carousel_slider: ^4.2.1
+  cached_network_image:
   smooth_page_indicator: ^1.0.0+2
   kakao_flutter_sdk: ^1.8.0 # 전체 추가
   kakao_flutter_sdk_user: ^1.8.0 # 카카오 로그인
@@ -46,6 +47,7 @@ dependencies:
   webview_flutter: ^4.7.0
   flutter_inappwebview: ^5.8.0
   kakao_map_plugin: ^0.2.5
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
